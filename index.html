@@ -399,13 +399,17 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <form class="footer-form-field">
+        <form class="footer-form">
           <label for="newslatter" class="footer-form-title">Підпишіться на розсилку</label>
-          <input class="footer-form-email" type="email" name="mail" id="newslatter" placeholder="E-mail">
+          <input
+            class="footer-form-email"
+            type="email"
+            name="mail"
+            id="newslatter"
+            placeholder="E-mail"
+          />
           <button class="footer-form-button" type="submit">Підписатися</button>
         </form>
-        </div>
       </div>
     </footer>
 
@@ -416,6 +420,39 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
+        <b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="name">Ім'я</label>
+            <input class="modal-form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="tel">Телефон</label>
+            <input class="modal-form-input" type="tel" id="tel" />
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="mail">Пошта</label>
+            <input class="modal-form-input" type="email" id="mail" />
+          </div>
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="comment">Коментар</label>
+            <textarea
+              class="modal-form-input"
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="modal-form-accept">
+            <input class="form-accept-input" type="checkbox" id="accept" />
+            <label class="form-accept-label" for="accept"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="accept-link" href="#">Умови договору</a></label
+            >
+          </div>
+          <button class="modal-form-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
