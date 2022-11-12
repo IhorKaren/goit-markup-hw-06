@@ -828,6 +828,7 @@ img {
 }
 
 .modal-form-accept {
+  position: relative;
   -webkit-appearance: none;
   display: flex;
   justify-content: center;
@@ -845,8 +846,8 @@ img {
   appearance: none;
 }
 
-.accept-icon {
-  display: block;
+.border-check {
+  position: relative;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -858,10 +859,15 @@ img {
   border-color 250ms var(--titing-function);
 }
 
-.form-accept-input:checked + .accept-icon {
-  background-size: contain;
-  background-image: url(../images/full-check.svg);
+.check-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.form-accept-input:checked + .border-check {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-origin: border-box;
