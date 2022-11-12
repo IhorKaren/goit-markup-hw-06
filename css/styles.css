@@ -829,7 +829,7 @@ img {
 
 .modal-form-accept {
   position: relative;
-  -webkit-appearance: none;
+  appearance: none;
   display: flex;
   justify-content: center;
   align-items: center;
