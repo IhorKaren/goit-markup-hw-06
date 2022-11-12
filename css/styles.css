@@ -590,7 +590,6 @@ img {
 .footer-list {
   display: inline-flex;
   gap: 10px;
-  margin-right: 93px;
 }
 
 .footer-title {
@@ -618,6 +617,10 @@ img {
 .footer-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
+}
+
+.footer-form {
+  margin-left: auto;
 }
 
 .footer-form-title {
@@ -665,6 +668,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--titing-function);
 }
@@ -761,7 +765,6 @@ img {
 }
 
 .modal-form-field {
-  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -774,6 +777,7 @@ img {
 
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-input {
@@ -784,6 +788,10 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
 
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
   transition: border-color 250ms var(--titing-function);
 }
 
@@ -791,11 +799,18 @@ img {
   border-color: var(--accent-color);
 }
 
+.modal-form-thumb {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-form-icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 5%;
 
+  transform: translate(-50%, -50%);
   transition: fill 250ms var(--titing-function);
 }
 
@@ -813,26 +828,22 @@ img {
 .modal-form textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
-  line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.01em;
-}
-
-.modal-form-accept {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .modal-form-accept {
   position: relative;
   appearance: none;
+  
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 .accept-link {
@@ -844,6 +855,10 @@ img {
 
 .form-accept-input {
   appearance: none;
+}
+
+.form-accept-input:focus + .border-check {
+  border: 2px solid var(--accent-color);
 }
 
 .border-check {
