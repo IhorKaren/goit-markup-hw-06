@@ -428,21 +428,39 @@
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#person"></use>
             </svg>
-            <input class="modal-form-input" type="text" name="name" id="name" placeholder=" " />
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder=" "
+            />
           </div>
           <div role="group" class="modal-form-field">
             <label class="modal-form-label" for="tel">Телефон</label>
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#phone"></use>
             </svg>
-            <input class="modal-form-input" type="tel" id="tel" placeholder=" " />
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="phone_number"
+              id="tel"
+              placeholder=" "
+            />
           </div>
           <div role="group" class="modal-form-field">
             <label class="modal-form-label" for="mail">Пошта</label>
             <svg class="modal-form-icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#email"></use>
             </svg>
-            <input class="modal-form-input" type="email" id="mail" placeholder=" " />
+            <input
+              class="modal-form-input"
+              type="email"
+              name="email_address"
+              id="mail"
+              placeholder=" "
+            />
           </div>
           <div role="group" class="modal-form-field">
             <label class="modal-form-label" for="comment">Коментар</label>
@@ -453,13 +471,11 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div role="group" class="modal-form-accept">
-            <input class="form-accept-input" type="checkbox" id="accept" />
-            <label class="form-accept-label" for="accept"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="accept-link" href="#">Умови договору</a></label
-            >
-          </div>
+          <label class="modal-form-accept">
+            <input class="form-accept-input" type="checkbox" name="confirmation" />
+            <span class="accept-icon"></span>
+            Погоджуюся з розсилкою та приймаю<a class="accept-link link" href="#">Умови договору</a>
+          </label>
           <button class="modal-form-button" type="submit">Відправити</button>
         </form>
       </div>

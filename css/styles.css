@@ -818,6 +818,8 @@ img {
 }
 
 .modal-form-accept {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 
@@ -825,9 +827,40 @@ img {
   line-height: 1.71;
 }
 
-.accept-link {
+.modal-form-accept {
+  -webkit-appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accept-link {   
   color: var(--accent-color);
 }
+
+.form-accept-input {
+  appearance: none;
+}
+
+.accept-icon {
+  display: block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.form-accept-input:checked +.accept-icon {
+  background-size: contain;
+  background-image: url(../images/full-check.svg);
+
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background-origin: border-box;
+}
+
 
 .modal-form-button {
   min-width: 200px;
